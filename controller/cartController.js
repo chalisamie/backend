@@ -1,4 +1,4 @@
-import userModel from "../models/userModel.js";
+import userModel from "../model/userModel.js";
 
 // add products to user cart
 const addToCart = async (req, res) => {
@@ -62,9 +62,7 @@ const getUserCart = async (req, res) => {
 };
 
 export { addToCart, updateCart, getUserCart };
-orderController.js
-import orderModel from "../models/orderModel.js";
-import userModel from "../models/userModel.js";
+import orderModel from "../model/orderModel.js";
 import Stripe from "stripe";
 
 // global variables
