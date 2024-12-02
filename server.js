@@ -15,8 +15,6 @@ import orderRouter from "./routes/orderRoute.js";
 const app = express();
 const port = process.env.PORT || 4000;
 app.use(cors());
-
-app.use(cors(corsOptions));
 // Service connections
 connectDB();
 connectCloudinary();
