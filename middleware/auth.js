@@ -1,5 +1,4 @@
 import jwt from "jsonwebtoken";
-
 const authUser = async (req, res, next) => {
   const { token } = req.headers;
   if (!token) {
@@ -14,5 +13,4 @@ const authUser = async (req, res, next) => {
     res.json({ success: false, message: error.message });
   }
 };
-
 export default authUser;
